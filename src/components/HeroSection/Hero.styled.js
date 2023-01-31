@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "../../assets/images/background-home.jpg";
-import Image2 from "../../assets/images/background-home-shrink.jpg";
+import Image2 from "../../assets/images/background-home-shrink2.jpg";
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
   background: #2d2d2d;
@@ -8,7 +9,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 1000px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 `;
@@ -39,4 +40,68 @@ export const ImageBg = styled.div`
   @media screen and (max-width: 1050px) {
     background-image: url(${Image2});
   }
+`;
+
+export const HeroContent = styled.div`
+  z-index: 3;
+  max-width: 1200px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+`;
+
+export const HeroImage = styled.div`
+  display: flex;
+`;
+
+export const ImageIl = styled.div``;
+
+export const HeroH1 = styled.h1`
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+
+  @media screen and (max-width: 1050px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 680px) {
+    font-size: 1.8rem;
+  }
+`;
+
+export const HeroP = styled.p`
+  margin-top: 5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  max-width: 600px;
+
+  @media screen and (max-width: 1050px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 680px) {
+    font-size: 1rem;
+  }
+`;
+
+export const HeroBtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 20px;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 20px;
 `;

@@ -65,6 +65,7 @@ export const NavMenu = styled.ul`
 
 export const NavTitle = styled.h1`
   display: none;
+
   @media screen and (max-width: 1050px) {
     display: flex;
   }
@@ -98,7 +99,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #e02f45;
+    color: #fb6d49;
     transition: 0.2 ease-in-out;
   }
 
@@ -116,7 +117,7 @@ export const NavQuick = styled.div`
   color: #fff;
 
   &:hover {
-    color: #e02f45;
+    color: #fb6d49;
     transition: 0.2 ease-in-out;
   }
 `;
