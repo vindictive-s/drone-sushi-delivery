@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
 import { BsBasket3Fill } from "react-icons/bs";
@@ -18,11 +19,28 @@ import {
 import Image from "../../assets/images/logo-2.svg";
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 120) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <img src={Image} />
           </NavLogo>
           <NavTitle>
@@ -51,7 +69,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-200}
+                offset={0}
               >
                 MENU
               </NavLinks>
@@ -61,7 +79,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-200}
+                offset={0}
               >
                 TRACK ORDER
               </NavLinks>
@@ -81,7 +99,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-200}
+                offset={0}
               >
                 ABOUT US
               </NavLinks>

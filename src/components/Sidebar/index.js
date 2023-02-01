@@ -10,7 +10,7 @@ import {
   SidebarLink,
   Input,
   TotalItems,
-  CountItems
+  CountItems,
 } from "./Sidebar.styled";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -31,11 +31,21 @@ const Sidebar = ({ isOpen, toggle }) => {
               <BsBasket3Fill />
             </TotalItems>
           </SidebarLink>
-          <SidebarLink to="menu" onClick={toggle}>MENU</SidebarLink>
-          <SidebarLink to="track" onClick={toggle}>TRACK ORDER</SidebarLink>
-          <SidebarLink to="payment" onClick={toggle}>PAYMENT</SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>ABOUT US</SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>CONTACT</SidebarLink>
+          <SidebarLink to="menu" onClick={toggle}>
+            MENU
+          </SidebarLink>
+          <SidebarLink to="track" onClick={toggle}>
+            TRACK ORDER
+          </SidebarLink>
+          <SidebarLink to="payment" onClick={toggle}>
+            PAYMENT
+          </SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>
+            ABOUT US
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
+            CONTACT
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
