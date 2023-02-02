@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
+import Basket from "./routes/Basket";
 import App from "./App";
 
 const AppLayout = () => {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "basket",
+        element: <Basket />,
       },
     ],
   },

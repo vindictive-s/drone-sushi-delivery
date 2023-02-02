@@ -81,6 +81,13 @@ export const PopularCard = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
 `;
 
 export const PopularWr = styled.div`
@@ -128,6 +135,13 @@ export const PopularDeal = styled.div`
 export const PopularDealCard = styled.div`
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
 `;
 
 export const PopularH3 = styled.h3`
@@ -146,6 +160,7 @@ export const PopularH3 = styled.h3`
 export const PopularDealIcon = styled.img`
   height: 10rem;
   width: 60vw;
+  position: relative;
   object-fit: cover;
   border-radius: 10px;
 
