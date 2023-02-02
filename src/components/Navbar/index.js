@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-200}
+                offset={-120}
               >
                 HOME
               </NavLinks>
@@ -89,7 +89,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-200}
+                offset={0}
               >
                 PAYMENT
               </NavLinks>
@@ -109,7 +109,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-200}
+                offset={0}
               >
                 CONTACT
               </NavLinks>

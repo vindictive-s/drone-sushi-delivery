@@ -21,8 +21,8 @@ export const PopularContainer = styled.div`
 
 export const PopularWrapper = styled.div`
   display: flex;
-  gap: 1rem;
-  padding-bottom: 32px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const PopularWrapperNav = styled.div`
@@ -35,6 +35,10 @@ export const PopularWrapperNav = styled.div`
 export const PopularBtnNav = styled.div`
   display: flex;
   gap: 0.8rem;
+  
+  @media screen and (min-width: 1050px) {
+    display: none;
+  }
 `;
 
 export const ArrowBack = styled(MdArrowBack)`
@@ -75,21 +79,16 @@ export const PopularH3 = styled.h3`
 `;
 
 export const PopularCard = styled.div`
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  padding: 20px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const PopularBtnWrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 `;
 
 export const PopularBtnWrap = styled.div`
@@ -98,16 +97,17 @@ export const PopularBtnWrap = styled.div`
 `;
 
 export const PopularIcon = styled.img`
-  height: 160px;
-  width: 160px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
 `;
 
 export const PopularDeal = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
   margin-bottom: 50px;
 `;
 

@@ -4,3 +4,16 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+
+
+.slide {
+    opacity: 0;
+    transition-duration: 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform:scale(1.08);
+}
