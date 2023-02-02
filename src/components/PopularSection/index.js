@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Icon1 from "../../assets/images/background-drone.jpeg";
-import IconDeal from "../../assets/images/background-drone.jpeg";
+import IconDeal from "../../assets/images/image-delivery-deal.jpeg";
 import {
   PopularContainer,
   PopularWrapperNav,
@@ -11,10 +10,12 @@ import {
   ArrowRight,
   PopularH1,
   PopularH2,
+  PopularH3,
   PopularWrapper,
+  PopularWr,
   PopularCard,
   PopularIcon,
-  PopularH3,
+  PopularP,
   PopularBtnWrapper,
   PopularBtnWrap,
   PopularDeal,
@@ -22,7 +23,6 @@ import {
   PopularDealIcon,
 } from "./PopularSection.styled";
 import { Button } from "../Button.styled";
-import { SliderData } from "../Carousel/SliderData";
 
 const PopularSection = ({ slides }) => {
   const [hoverLeft, setHoverLeft] = useState(false);
@@ -77,21 +77,21 @@ const PopularSection = ({ slides }) => {
         </PopularBtnNav>
       </PopularWrapperNav>
       <PopularWrapper>
-        {SliderData.map((slide, index) => {
+        {slides.map((slide, index) => {
           return (
             <PopularCard
               className={index === current ? "slide active" : "slide"}
               key={index}
             >
               {index === current && (
-                <>
-                  <PopularIcon src={slide.image} />{" "}
+                <PopularWr>
+                  <PopularIcon src={slide.image} />
                   <PopularH2>{slide.title}</PopularH2>
-                  <PopularH3>{slide.description}</PopularH3>
+                  <PopularP>{slide.description}</PopularP>
                   <PopularBtnWrapper>
-                    <Button>Check out!</Button>
+                    <Button>From $3.99</Button>
                   </PopularBtnWrapper>
-                </>
+                </PopularWr>
               )}
             </PopularCard>
           );
@@ -100,6 +100,7 @@ const PopularSection = ({ slides }) => {
       <PopularDeal>
         <PopularDealCard>
           <PopularDealIcon src={IconDeal} />
+          <PopularH3>15% off delivery with code: 15FLYBY</PopularH3>
         </PopularDealCard>
       </PopularDeal>
       <PopularBtnWrap>

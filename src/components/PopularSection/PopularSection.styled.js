@@ -28,17 +28,15 @@ export const PopularWrapper = styled.div`
 export const PopularWrapperNav = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 20px;
   margin-bottom: 50px;
+  margin-top: 50px;
 `;
 
 export const PopularBtnNav = styled.div`
   display: flex;
   gap: 0.8rem;
-  
-  @media screen and (min-width: 1050px) {
-    display: none;
-  }
 `;
 
 export const ArrowBack = styled(MdArrowBack)`
@@ -72,7 +70,7 @@ export const PopularH2 = styled.h2`
   justify-content: center;
 `;
 
-export const PopularH3 = styled.h3`
+export const PopularP = styled.p`
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -85,10 +83,22 @@ export const PopularCard = styled.div`
   flex-direction: column;
 `;
 
+export const PopularWr = styled.div`
+  padding: 20px;
+  background-color: #e2e2e2;
+  border-radius: 20px;
+  height: 350px;
+
+  @media screen and (min-width: 1050px) {
+    width: 500px;
+  }
+`;
+
 export const PopularBtnWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 `;
 
 export const PopularBtnWrap = styled.div`
@@ -97,10 +107,14 @@ export const PopularBtnWrap = styled.div`
 `;
 
 export const PopularIcon = styled.img`
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
   border-radius: 10px;
+
+  @media screen and (min-width: 1050px) {
+    width: 460px;
+  }
 `;
 
 export const PopularDeal = styled.div`
@@ -116,9 +130,26 @@ export const PopularDealCard = styled.div`
   align-items: center;
 `;
 
+export const PopularH3 = styled.h3`
+  position: absolute;
+  font-size: 1rem;
+  padding: 10px;
+  background: linear-gradient(#e2e2e2, #f3f3f3);
+  border-radius: 0 5px 5px 0;
+
+  @media screen and (min-width: 1050px) {
+    font-size: 3rem;
+    border-radius: 0 10px 10px 0;
+  }
+`;
+
 export const PopularDealIcon = styled.img`
   height: 10rem;
   width: 60vw;
   object-fit: cover;
   border-radius: 10px;
+
+  @media screen and (min-width: 1050px) {
+    height: 200px;
+  }
 `;
