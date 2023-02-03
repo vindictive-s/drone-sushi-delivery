@@ -39,8 +39,8 @@ export const TrackH1 = styled.h1`
 `;
 
 export const TrackMap = styled.div`
-  height: 300px;
-  width: 400px;
+  height: 240px;
+  width: 360px;
   background-color: blue;
 `;
 
