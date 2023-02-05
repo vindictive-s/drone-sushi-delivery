@@ -7,11 +7,10 @@
 
 .slide {
     opacity: 0;
-    transition-duration: 0.2s ease-in;
+    transition: 1s ease-in-out;
 }
 
 .slide.active {
     opacity: 1;
-    transition-duration: 0.2s;
-    transform:scale(1.1);
+    transition: 1s ease-in-out;
 }

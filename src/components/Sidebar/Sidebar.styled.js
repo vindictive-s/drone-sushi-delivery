@@ -64,19 +64,6 @@ export const SidebarLink = styled(LinkS)`
   }
 `;
 
-export const Input = styled.input`
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  margin-right: 1rem;
-  background: #e2e2e2;
-  border: none;
-  border-radius: 10px;
-
-  ::placeholder {
-    color: #fb6d49;
-  }
-`;
-
 export const TotalItems = styled.div`
   display: flex;
   font-size: 1rem;

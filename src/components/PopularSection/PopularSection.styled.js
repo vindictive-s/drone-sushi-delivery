@@ -84,7 +84,7 @@ export const PopularCard = styled.div`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1);
+    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
@@ -135,6 +135,7 @@ export const PopularDeal = styled.div`
 export const PopularDealCard = styled.div`
   display: flex;
   align-items: center;
+  max-width: 800px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -146,13 +147,18 @@ export const PopularDealCard = styled.div`
 
 export const PopularH3 = styled.h3`
   position: absolute;
+  color: #2d2d2d;
   font-size: 1rem;
   padding: 10px;
   background: linear-gradient(#e2e2e2, #f3f3f3);
   border-radius: 0 5px 5px 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
   @media screen and (min-width: 1050px) {
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 0 10px 10px 0;
   }
 `;

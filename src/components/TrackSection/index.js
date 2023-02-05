@@ -1,4 +1,7 @@
 import React from "react";
+import { Input } from "../Input.styled";
+import { Button } from "../Button.styled";
+import ImgMap from "../../assets/images/image-map-dark.png";
 import {
   TrackContainer,
   TrackBg,
@@ -8,20 +11,20 @@ import {
   TrackMap,
   TrackMapWr,
   TrackDetails,
-  TrackInput,
 } from "./TrackSection.styled";
 
 const TrackSection = () => {
   return (
     <TrackContainer id="track">
       <TrackWrapper>
+        <TrackH1>Search for your order</TrackH1>
         <TrackDetails>
-          <TrackH1>Search for your order</TrackH1>
-          <TrackInput>INPUT container</TrackInput>
+          <Input type="string" placeholder="Search" />
+          <Button>Go</Button>
         </TrackDetails>
         <TrackMapWr>
           <TrackH1>Map</TrackH1>
-          <TrackMap />
+          <TrackMap src={ImgMap} />
         </TrackMapWr>
       </TrackWrapper>
     </TrackContainer>

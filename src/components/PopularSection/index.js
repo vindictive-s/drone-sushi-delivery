@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import IconDeal from "../../assets/images/image-delivery-deal.jpeg";
+import IconDeal from "../../assets/images/image-delivery-deal.jpg";
 import {
   PopularContainer,
   PopularWrapperNav,

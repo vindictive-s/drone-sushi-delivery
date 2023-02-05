@@ -1,4 +1,5 @@
 import React from "react";
+import { Input } from "../Input.styled";
 import { GoSearch } from "react-icons/go";
 import { BsBasket3Fill } from "react-icons/bs";
 import {
@@ -8,7 +9,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  Input,
   TotalItems,
   CountItems,
 } from "./Sidebar.styled";

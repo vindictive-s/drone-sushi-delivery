@@ -117,7 +117,7 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
           <NavMenu>
             <NavItem>
-              <NavQuick>
+              <NavQuick to="/basket">
                 <BsBasket3Fill />
               </NavQuick>
               <NavQuick>

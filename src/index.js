@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "basket",
+        path: "/basket",
         element: <Basket />,
       },
     ],
