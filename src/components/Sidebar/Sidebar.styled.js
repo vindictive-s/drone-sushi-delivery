@@ -52,6 +52,7 @@ export const SidebarLink = styled(LinkS)`
   justify-content: center;
   font-size: 1rem;
   text-decoration: none;
+  letter-spacing: 4px;
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;

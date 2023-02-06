@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 30;
 
   @media screen and (max-width: 1000px) {
     transition: 0.8s all ease;
@@ -96,7 +96,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #e2e2e2;
+  letter-spacing: 2px;
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;

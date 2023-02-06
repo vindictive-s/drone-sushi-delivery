@@ -4,8 +4,6 @@ import { Button } from "../Button.styled";
 import ImgMap from "../../assets/images/image-map-dark.png";
 import {
   TrackContainer,
-  TrackBg,
-  ImageBg,
   TrackWrapper,
   TrackH1,
   TrackMap,
