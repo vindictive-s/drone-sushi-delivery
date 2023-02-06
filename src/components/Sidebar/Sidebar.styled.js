@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
@@ -65,10 +66,11 @@ export const SidebarLink = styled(LinkS)`
   }
 `;
 
-export const TotalItems = styled.div`
+export const BasketLink = styled(LinkR)`
   display: flex;
   font-size: 1rem;
   color: #e2e2e2;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
 

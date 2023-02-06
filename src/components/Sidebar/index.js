@@ -9,7 +9,7 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  TotalItems,
+  BasketLink,
   CountItems,
 } from "./Sidebar.styled";
 
@@ -26,10 +26,10 @@ const Sidebar = ({ isOpen, toggle }) => {
             <GoSearch />
           </SidebarLink>
           <SidebarLink onClick={toggle}>
-            <TotalItems>
+            <BasketLink to="/basket">
               <CountItems>0</CountItems>
               <BsBasket3Fill />
-            </TotalItems>
+            </BasketLink>
           </SidebarLink>
           <SidebarLink to="menu" onClick={toggle}>
             MENU

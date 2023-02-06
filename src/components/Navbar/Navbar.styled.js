@@ -119,11 +119,23 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 
-export const NavQuick = styled.div`
-  display: flex;
+export const NavQuickBasket = styled(LinkR)`
   align-items: center;
+  font-size: 1.5rem;
   padding: 0 1rem;
-  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+
+  &:hover {
+    color: #fb6d49;
+    transition: 0.2 ease-in-out;
+  }
+`;
+
+export const NavQuickSearch = styled.div`
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 1rem;
   cursor: pointer;
   color: #fff;
 

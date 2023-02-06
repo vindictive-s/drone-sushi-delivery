@@ -2,9 +2,10 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home";
-import About from "./routes/About";
-import Contact from "./routes/Contact";
+import Menu from "./routes/Menu";
+import Checkout from "./routes/Checkout";
 import Basket from "./routes/Basket";
+import ErrorPage from "./routes/ErrorPage";
 import App from "./App";
 
 const AppLayout = () => {
@@ -17,25 +18,20 @@ const AppLayout = () => {
 
 const router = createBrowserRouter([
   {
+    path: "/",
     element: <AppLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-      {
-        path: "/basket",
-        element: <Basket />,
-      },
-    ],
+  },
+  {
+    path: "checkout",
+    element: <Checkout />,
+  },
+  {
+    path: "menu",
+    element: <Menu />,
+  },
+  {
+    path: "basket",
+    element: <Basket />,
   },
 ]);
 

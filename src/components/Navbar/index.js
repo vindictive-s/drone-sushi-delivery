@@ -14,7 +14,8 @@ import {
   NavH1,
   NavH2,
   NavItem,
-  NavQuick,
+  NavQuickBasket,
+  NavQuickSearch,
 } from "./Navbar.styled";
 import Image from "../../assets/images/logo-2.svg";
 
@@ -117,12 +118,12 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
           <NavMenu>
             <NavItem>
-              <NavQuick to="/basket">
+              <NavQuickBasket to="/basket">
                 <BsBasket3Fill />
-              </NavQuick>
-              <NavQuick>
+              </NavQuickBasket>
+              <NavQuickSearch>
                 <GoSearch />
-              </NavQuick>
+              </NavQuickSearch>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
