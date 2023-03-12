@@ -8,6 +8,8 @@ import {
   NavTitle,
   NavH1,
   NavH2,
+} from "../components/Navbar/Navbar.styled";
+import {
   BasketContainer,
   BasketWrapper,
   BasketItem,
@@ -66,7 +68,7 @@ const Basket = () => {
               </BasketItem>
               <BasketTotal>
                 <BasketTotalName>
-                  TOTAL
+                  TOTAL 
                   <BasketTotalCount>0</BasketTotalCount>
                 </BasketTotalName>
                 <BasketTotalPrice>$4.99</BasketTotalPrice>

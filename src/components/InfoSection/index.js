@@ -21,7 +21,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./InfoSection.styled";
-import { Button } from "../Button.styled";
+import { ButtonS } from "../ButtonS.styled";
 
 const InfoSection = () => {
   const [hover, setHover] = useState(false);
@@ -47,9 +47,9 @@ const InfoSection = () => {
       <InfoRevContainer>
         <InfoH2>Customer Reviews</InfoH2>
         <InfoBtnWrapper>
-          <Button onMouseEnter={onHover} onMouseLeave={onHover}>
+          <ButtonS onMouseEnter={onHover} onMouseLeave={onHover}>
             Go to Reviews{hover ? <ArrowForward /> : <ArrowRight />}{" "}
-          </Button>
+          </ButtonS>
         </InfoBtnWrapper>
         <InfoWrapper>
           <InfoCard>

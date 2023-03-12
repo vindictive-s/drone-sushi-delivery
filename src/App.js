@@ -10,6 +10,7 @@ import InfoSection from "./components/InfoSection";
 import FormSection from "./components/FormSection";
 import Footer from "./components/Footer";
 import { SliderData } from "./components/Carousel/SliderData";
+import { MenuData } from "./components/PopularSection/MenuData";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);

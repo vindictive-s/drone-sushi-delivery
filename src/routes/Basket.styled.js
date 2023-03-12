@@ -2,60 +2,6 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
-export const Nav = styled.nav`
-  background: ${({ scrollNav }) =>
-    scrollNav ? "linear-gradient(30deg, #f28e26, #fd644f)" : "transparent"};
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 30;
-
-  @media screen and (max-width: 1000px) {
-    transition: 0.8s all ease;
-  }
-`;
-
-export const NavbarContainer = styled.div`
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-`;
-
-export const NavLogo = styled(LinkR)`
-  height: 100%;
-  background-color: #2d2d2d;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  margin-left: 1rem;
-`;
-
-export const NavTitle = styled.h1`
-  display: flex;
-`;
-
-export const NavH1 = styled.h1`
-  height: 60px;
-  display: flex;
-  align-items: center;
-  color: #2d2d2d;
-`;
-
-export const NavH2 = styled.h2`
-  height: 60px;
-  display: flex;
-  align-items: center;
-  color: #e2e2e2;
-`;
-
 export const BasketContainer = styled.div`
   display: flex;
   align-items: center;
@@ -71,7 +17,6 @@ export const BasketWrapper = styled.div`
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   height: 100%;
   min-width: 80%;
   padding: 20px;

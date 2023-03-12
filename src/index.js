@@ -7,6 +7,7 @@ import Checkout from "./routes/Checkout";
 import Basket from "./routes/Basket";
 import ErrorPage from "./routes/ErrorPage";
 import App from "./App";
+import { MenuData } from "./components/PopularSection/MenuData";
 
 const AppLayout = () => {
   return (
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: "menu",
-    element: <Menu />,
+    element: <Menu items={MenuData} />,
   },
   {
     path: "basket",

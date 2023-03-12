@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../Button.styled";
+import { ButtonS } from "../ButtonS.styled";
 import {
   HeroContainer,
   HeroBg,
@@ -35,9 +35,9 @@ const HeroSection = () => {
           Sign up for a new account and receive $25 for your first order.
         </HeroP>
         <HeroBtnWrapper>
-          <Button onMouseEnter={onHover} onMouseLeave={onHover}>
+          <ButtonS onMouseEnter={onHover} onMouseLeave={onHover}>
             GO TO CATALOG{hover ? <ArrowForward /> : <ArrowRight />}{" "}
-          </Button>
+          </ButtonS>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

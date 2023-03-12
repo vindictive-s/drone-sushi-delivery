@@ -22,7 +22,8 @@ import {
   PopularDealCard,
   PopularDealIcon,
 } from "./PopularSection.styled";
-import { Button } from "../Button.styled";
+import { ButtonR } from "../ButtonR.styled";
+import { ButtonS } from "../ButtonS.styled";
 
 const PopularSection = ({ slides }) => {
   const [hoverLeft, setHoverLeft] = useState(false);
@@ -60,20 +61,20 @@ const PopularSection = ({ slides }) => {
       <PopularWrapperNav>
         <PopularH1>Popular Categories</PopularH1>
         <PopularBtnNav>
-          <Button
+          <ButtonS
             onMouseEnter={onHoverLeft}
             onMouseLeave={onHoverLeft}
             onClick={prevSlide}
           >
             {hoverLeft ? <ArrowBack /> : <ArrowLeft />}{" "}
-          </Button>
-          <Button
+          </ButtonS>
+          <ButtonS
             onMouseEnter={onHoverRight}
             onMouseLeave={onHoverRight}
             onClick={nextSlide}
           >
             {hoverRight ? <ArrowForward /> : <ArrowRight />}{" "}
-          </Button>
+          </ButtonS>
         </PopularBtnNav>
       </PopularWrapperNav>
       <PopularWrapper>
@@ -89,7 +90,7 @@ const PopularSection = ({ slides }) => {
                   <PopularH2>{slide.title}</PopularH2>
                   <PopularP>{slide.description}</PopularP>
                   <PopularBtnWrapper>
-                    <Button>From $3.99</Button>
+                    <ButtonS>From $3.99</ButtonS>
                   </PopularBtnWrapper>
                 </PopularWr>
               )}
@@ -104,9 +105,9 @@ const PopularSection = ({ slides }) => {
         </PopularDealCard>
       </PopularDeal>
       <PopularBtnWrap>
-        <Button onMouseEnter={onHover} onMouseLeave={onHover}>
+        <ButtonR onMouseEnter={onHover} onMouseLeave={onHover} to="/menu">
           FULL MENU{hover ? <ArrowForward /> : <ArrowRight />}{" "}
-        </Button>
+        </ButtonR>
       </PopularBtnWrap>
     </PopularContainer>
   );
